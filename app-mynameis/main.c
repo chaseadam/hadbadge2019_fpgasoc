@@ -81,13 +81,13 @@ void main(int argc, char **argv) {
 	//buffered. You normally don't want this.
 	fprintf(f, "\033C"); //clear the console. Note '\033' is the escape character.
 
-	fprintf(f, "\0338X"); //set Xpos to 5
+	fprintf(f, "\03310X"); //set Xpos to 5
 	fprintf(f, "\03312Y"); //set Ypos to 8
 	// change the line below for your own name/twitter handle, etc.
-	fprintf(f, "@thomasflummer"); // Print a nice greeting.
+	fprintf(f, "@chaseadam"); // Print a nice greeting.
 	
 	// maybe change the scaling factor (1.8) below if your name is too long or very short
-	gfx_set_xlate_val(0, 240, 200, 1.8, 0);
+	gfx_set_xlate_val(0, 240, 200, 2.9, 0);
 
 	//The user can still see nothing of this graphics goodness, so let's re-enable the framebuffer and
 	//tile layer A (the default layer for the console). Also indicate the framebuffer we have is
